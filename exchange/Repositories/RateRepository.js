@@ -7,15 +7,17 @@ const providers = require('../providers.json')
  * rateEntity
  */
 class ClientRepository {
-  constructor (entity) {
+  constructor (entity, providers) {
     this.Entity = entity
+    this.providers = providers
   }
   
   static get injectable () { return true }
 
   static get inject () {
     return [
-      entity
+      entity,
+      providers
     ]
   }
 
@@ -23,7 +25,7 @@ class ClientRepository {
    * Retrive latest rates saved by provider
    */
   async latest () {
-    return providers.map(async provider => {
+    return this.providers.map(async provider => {
       return await this.Entity.findOne({provider: provider.name}, null , {sort: { last_updated: -1}})
     }) 
   }

@@ -10,9 +10,10 @@ const services = require('../Services')
  * 
  */
 class ClientRepository {
-  constructor (entity, services) {
+  constructor (entity, services, providers) {
     this.Entity = entity
-    this.services = services
+    this.services = services,
+    this.providers = providers
   }
   
   static get injectable () { return true }
@@ -20,7 +21,8 @@ class ClientRepository {
   static get inject () {
     return [
       entity,
-      services
+      services,
+      providers
     ]
   }
 
@@ -28,7 +30,7 @@ class ClientRepository {
    * Update all rates by available providers
    */
   async sync () {
-    return providers
+    return this.providers
       .filter(provider => `${provider.id}Service` in this.services)
       .map(await this.syncOne.bind(this)) 
   }

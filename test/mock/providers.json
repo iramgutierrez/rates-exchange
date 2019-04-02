@@ -1,0 +1,17 @@
+[
+  {
+      "id": "Fake1",
+      "name": "Fake1",
+      "url": "http://fake1.com"
+  },
+  {
+      "id": "Fake2",
+      "name": "Fake2",
+      "url": "http://fake2.com"
+  },
+  {
+      "id": "Fake3",
+      "name": "Fake3",
+      "url": "http://fake3.com"
+  }
+]
