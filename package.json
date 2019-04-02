@@ -1,0 +1,31 @@
+{
+  "name": "rates-exchange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iramgutierrez/rates-exchange.git"
+  },
+  "author": "Iram Gutiérrez <iramgutzglez@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iramgutierrez/rates-exchange/issues"
+  },
+  "homepage": "https://github.com/iramgutierrez/rates-exchange#readme",
+  "dependencies": {
+    "basic-di": "^1.0.1",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.21",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "xml2json": "^0.11.2"
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+      "id": "Fixer",
+      "name": "Fixer",
+      "url": "http://data.fixer.io/api/latest?access_key=df5a3cbffb9d8a4ac60ec6be09aaf8f4&format=1&symbols=MXN"
+  },
+  {
+      "id": "Banxico",
+      "name": "Banxico",
+      "url": "https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718/datos/oportuno?token=3ed7ea57a47999a016d56c88fa03ac99822942e29e1439d4fb2f52bdec9ec4c4"
+  },
+  {
+      "id": "DOF",
+      "name": "Diario Oficial de la Federación",
+      "url": "http://www.banxico.org.mx/tipcamb/tipCamMIAction.do"
+  }
+]
